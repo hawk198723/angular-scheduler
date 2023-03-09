@@ -1,0 +1,122 @@
+<form target="self" id="bootstrapForm" method="POST">
+  <br />
+  <fieldset>
+    <h2>Leave Request<br /><small></small></h2>
+  </fieldset>
+  <br />
+
+  <div>
+    <label>Employee Name</label>
+    <select id="employee-name" style="width: 350px">
+      <option value="john-doe">John Doe</option>
+      <option value="jane-doe">Jane Doe</option>
+      <option value="jimmy-smith">Jimmy Smith</option>
+    </select>
+  </div>
+  <br />
+
+  <div class="form-div">
+    <label class="form-label">Leave Type</label>
+    <select id="leave-type" style="width: 350px">
+      <option value="vacation">Vacation</option>
+      <option value="personal">Personal</option>
+      <option value="sick">Sick</option>
+    </select>
+  </div>
+
+  <div class="align-items-center">
+    <label>Is FMLA</label>
+    <input type="checkbox" id="fmla" name="fmla" />
+  </div>
+
+  <br />
+  <div>
+    <label>Sick Leave Purposes</label>
+    <select id="sick-reason" style="width: 350px">
+      <option value="illness">Illness</option>
+      <option value="injury">Injury</option>
+      <option value="incapacitation">
+        Incapacitation of Requesting Employee
+      </option>
+    </select>
+  </div>
+  <br />
+  <div>
+    <label>FMLA Purposes</label>
+    <select id="sick-reason" style="width: 350px">
+      <option value="birth">Birth</option>
+      <option value="adoption">Adoption</option>
+      <option value="foster">Foster Care</option>
+    </select>
+  </div>
+  <br />
+  <div>
+    <label>Start Date</label>
+    <div class="form-group">
+      <input
+        type="date"
+        id="date"
+        placeholder="8/23/2019"
+        class="form-control"
+        required
+      />
+    </div>
+  </div>
+  <br />
+  <div>
+    <label>End Date</label>
+    <div class="form-group">
+      <input
+        type="date"
+        id="date"
+        placeholder="8/23/2019"
+        class="form-control"
+        required
+      />
+    </div>
+  </div>
+  <br />
+  <div>
+    <label>Start Time</label>
+    <div class="form-group">
+      <input
+        type="time"
+        id="start-time"
+        placeholder="08:00"
+        class="form-control"
+        required
+      />
+    </div>
+  </div>
+  <br />
+  <div>
+    <label>End Time</label>
+    <div class="form-group">
+      <input
+        type="time"
+        id="end-time"
+        placeholder="17:00"
+        class="form-control"
+        required
+      />
+    </div>
+  </div>
+  <div>
+    <label for="remarks">Remarks</label>
+    <div class="form-group">
+      <textarea
+        id="remarks"
+        name="entry"
+        class="form-control"
+        required
+        style="width: 350px; height: 100px"
+      ></textarea>
+    </div>
+  </div>
+  <br />
+  <div class="form-buttons">
+    <button type="submit">Submit</button>
+    <button type="cancel">Cancel</button>
+  </div>
+  <br />
+</form>

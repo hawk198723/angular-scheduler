@@ -1,0 +1,40 @@
+div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+label {
+  grid-column: 1 / 2;
+}
+
+select {
+  grid-column: 2 / 3;
+}
+
+/* -buttons- */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  margin: 0 10px;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: rgb(44, 108, 164);
+}
+
+.form-buttons button[type="cancel"] {
+  background-color: rgb(193, 94, 66);
+}
+
+/*  */
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
